@@ -1,0 +1,17 @@
+
+<button class="home-link"  routerLink="/posts">Home</button>
+<router-outlet></router-outlet>
+    <table id="posts">
+      <tr>
+        <th>Post Id</th>
+        <th>Title</th>
+        <th>Body</th>
+      </tr>
+      <tr *ngFor="let postData of postDetail">
+        <td>{{ postData.id }}</td>
+        <td>{{ postData.title }}</td>
+        <td>{{ postData.body }}</td>
+      </tr>
+    </table>
+    
+    

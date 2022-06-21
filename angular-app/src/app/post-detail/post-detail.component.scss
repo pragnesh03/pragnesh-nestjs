@@ -1,0 +1,26 @@
+#posts {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  #posts td, #posts th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #posts tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #posts tr:hover {background-color: #ddd;}
+  
+  #posts th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4a8cca;
+    color: white;
+  }
+
+  .home-link {padding: 10px; color: white; background-color: rgb(113, 163, 204);}
+  .home-link:hover {cursor: pointer;}

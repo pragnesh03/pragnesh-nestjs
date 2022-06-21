@@ -1,0 +1,16 @@
+<html>
+<body>
+ <div>
+      <form (keydown.enter)="$event.preventDefault()" enctype="multipart/form-data">
+        <label for="idPost">Post ID</label>
+        <input type="text" id="idPost" maxlength="3" name="idPost" placeholder="Enter Post Id.." onwheel="return false;"
+        onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57" [(ngModel)]="buttonDisabled">
+        
+        <input type="button" (click)="onSubmit()" value="Send" [disabled]="buttonDisabled == ''" >
+      </form>
+    </div>
+    
+    </body>
+    </html>
+    
+
